@@ -125,7 +125,7 @@ pub fn set_dns() -> Result<()> {
         networksetup()
             .arg("-setdnsservers")
             .arg(&service)
-            .arg("223.5.5.5")
+            .arg("127.0.0.1")
             .output()?;
     }
 
